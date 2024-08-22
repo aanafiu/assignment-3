@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio - A Daisy UI Project</title>
+
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- daisy & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                btn:'#ABEF5F',
+              },
+              fontFamily: {
+                    head: 'Manrope',
+            },
+            }
+          }
+        }
+      </script>
+
+      <!-- CSS Link -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/9d3aa58ebe.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="m-0 p-0 bg-white">
+
+    <header class=" font-head">
+        <div class="w-[90%] mx-auto flex whitespace-nowrap py-6">
+
+            <!-- logo -->
+             <div class="flex gap-1  items-center text-3xl">
+                <div class="-rotate-45 ">
+                    <i class="h-[50px] w-[50px] items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-1"></i>
+                </div>
+                
+                <h1 class="font-head font-extrabold">Rinterio</h1>
+
+             </div>
+
+             <!-- right Menu -->
+             <div class="flex w-[100%] justify-end items-center gap-5">
+
+                <!-- Menu option -->
+                <ul class="hidden lg:flex whitespace-nowrap flex text-base font-normal gap-2">
+                    <li class="p-3 hover:bg-btn hover:rounded-xl"><a>Home</a></li>
+                    <li class="p-3 hover:bg-btn hover:rounded-xl"><a>Services</a></li>
+                    <li class="p-3 hover:bg-btn hover:rounded-xl"><a>Portfolio</a></li>
+                    <li class="p-3 hover:bg-btn hover:rounded-xl"><a>Blogs</a></li>
+                    <li class="p-3 hover:bg-btn hover:rounded-xl"><a>Contact Us</a></li>
+                  </ul>
+
+                  <!-- buttons -->
+                   <div class="hidden md:flex justify-evenly items-center gap-2 ">
+                   
+                    <!-- Search -->
+                    <button class="btn btn-md btn-ghost bg-white rounded-e-none hover:bg-btn hover:text-white"><i class="fa-solid fa-magnifying-glass text-2xl"></i></button>
+
+                    <!-- cart -->
+                    <button class="btn btn-md btn-ghost bg-white rounded-s-none hover:bg-btn hover:text-white"><i class="fa fa-cart-shopping text-2xl "></i></button>
+
+                      <!-- Consult button -->
+                      <button class="btn btn-md px-4 text-lg py-1 items-center rounded-2xl hover:bg-btn hover:text-white border-0 ">Book Consult
+                        <div class="-rotate-45 ">
+                            <i class="items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-2"></i>
+                        </div>
+                        </button>
+
+                   </div>
+
+             <!-- Burger -->
+              <div class="lg:hidden">
+                <label class="btn btn-md p-4 btn-circle swap swap-rotate hover:bg-btn">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" />
+                  
+                    <!-- hamburger icon -->
+                    <svg
+                      class="swap-off fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512">
+                      <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                    </svg>
+                  
+                    <!-- close icon -->
+                    <svg
+                      class="swap-on fill-current "
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 512 512">
+                      <polygon
+                        points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                    </svg>
+                  </label>
+              </div>
+
+             </div>
+
+        </div>
+    </header>
+
+</body>
+</html>
