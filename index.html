@@ -146,18 +146,20 @@
      </section>
 
      <!-- About -->
-      <section class="w-full">
+      <section class=" w-full">
         <!-- image -->
-         <div>
-          <img src="./assets/Vector.png" alt="">
+         <div class=" mx-[25%] sm:mx-[35%] w-max lg:mx-0">
+          <img src="./assets/Vector.png" alt="" >
          </div>
-        <div class="w-[90%] py-6 mx-auto">
+
+         <!-- container -->
+        <div class="w-[90%] py-2 gap-6 mx-auto flex justify-between text-center flex-col  lg:flex-row lg:text-left">
 
           <!-- left -->
-           <div>
+           <div class="w-[100%] flex flex-col items-center px-5 lg:items-start ">
 
             <!-- tagline -->
-            <div class="taglinehover bg-white btn btn-md px-4 text-lg py-1 items-center rounded-2xl text-primary hover:text-white hover:bg-btn border-0 ">
+            <div class="taglinehover w-max bg-white btn btn-md px-4 text-lg py-1 mb-5 items-center rounded-2xl text-primary hover:text-white hover:bg-btn border-0 ">
                 <div class="icon">
                     <i class=" items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-2 hover:bg-black"></i>
                 </div>
@@ -165,13 +167,40 @@
               </div>
 
               <!-- headline & text -->
-               <div>
-                <h1 class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl ">We design thoughtful, liveable spaces</h1>
-                <p class="text-allp text-sm sm:text-base">The barn house captivates with its blend of rustic charm and 
+               <div class="my-2">
+                <h1 class="font-bold text-primary text-2xl sm:text-3xl md:text-4xl ">We design thoughtful,<br class="block sm:hidden lg:block">liveable spaces</h1>
+                <p class="text-allp text-sm sm:text-base my-6 w-[90%] mx-auto lg:mx-0">The barn house captivates with its blend of rustic charm and 
                   modern sophistication, featuring weathered wood, sleek metal accents.</p>
                </div>
+
+               <!-- boxs -->
+                <div class="flex flex-col gap-4 text-left sm:flex-row   lg:flex-col">
+                  <!-- box1 -->
+                  <div class="bg-white rounded-xl flex gap-5 p-6">
+                    <img src="./assets/commercial.png" alt="" class="sm:w-[90px] h-[70px]" >
+                    <div class="flex flex-col gap-2">
+                      <h1 class="text-xl font-extrabold text-primary">Commercial</h1>
+                      <p class="text-allp text-base w-[90%] lg:w-[80%]">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                  </div>
+                  <!-- box2 -->
+                  <div class="bg-white rounded-xl flex gap-5 p-6">
+                    <img src="./assets/residential.png" alt="" class="sm:w-[90px] h-[70px]" >
+                    <div class="flex flex-col gap-2">
+                      <h1 class="text-xl font-extrabold text-primary">Residential</h1>
+                      <p class="text-allp text-base w-[90%] lg:w-[80%]">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                  </div>
+
+
+                </div>
              
 
+           </div>
+
+           <!-- right -->
+           <div class="flex justify-center items-center w-[100%] p-6" >
+            <img src="./assets/Rectangle.png" alt="" class="w-max">
            </div>
 
           
