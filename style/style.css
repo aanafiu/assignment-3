@@ -1,0 +1,6 @@
+.myhover:hover .iconhover{
+    background-color: black  !important;
+}
+.myhover:hover .icon{
+    rotate:-135deg !important;
+}

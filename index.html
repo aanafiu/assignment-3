@@ -19,6 +19,9 @@
             extend: {
               colors: {
                 btn:'#ABEF5F',
+                primary: '#212121',
+                allp:'#494949',
+                btn2nd:'rgba(171, 239, 95, 0.5)',
               },
               fontFamily: {
                     head: 'Manrope',
@@ -28,15 +31,18 @@
         }
       </script>
 
-      <!-- CSS Link -->
-    <link rel="stylesheet" href="./style/style.css">
-
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/9d3aa58ebe.js" crossorigin="anonymous"></script>
 
-</head>
-<body class="m-0 p-0 bg-white">
+    <!-- fav link -->
+     <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
 
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="m-0 p-0 bg-white font-head">
+
+  <!-- Header Nav -->
     <header class=" font-head">
         <div class="w-[90%] mx-auto flex whitespace-nowrap py-6">
 
@@ -54,7 +60,7 @@
              <div class="flex w-[100%] justify-end items-center gap-5">
 
                 <!-- Menu option -->
-                <ul class="hidden lg:flex whitespace-nowrap flex text-base font-normal gap-2">
+                <ul class="hidden lg:flex whitespace-nowrap text-base font-normal gap-2">
                     <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-white"><a>Home</a></li>
                     <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-white"><a>Services</a></li>
                     <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-white"><a>Portfolio</a></li>
@@ -72,9 +78,9 @@
                     <button class="btn btn-md btn-ghost bg-white rounded-s-none hover:bg-btn hover:text-white"><i class="fa fa-cart-shopping text-2xl "></i></button>
 
                       <!-- Consult button -->
-                      <button class="btn btn-md px-4 text-lg py-1 items-center rounded-2xl hover:bg-btn hover:text-white border-0 ">Book Consult
-                        <div class="-rotate-45 ">
-                            <i class="items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-2"></i>
+                      <button class="myhover btn btn-md px-4 text-lg py-1 items-center rounded-2xl bg-btn hover:bg-btn2nd border-0 "  onclick="my_modal_3.showModal()">Book Consult
+                        <div class="icon -rotate-45  ">
+                            <i class="iconhover bg-black text-white items-center justify-center flex fa-solid fa-arrow-right  rounded-[50%] p-2"></i>
                         </div>
                         </button>
 
@@ -113,6 +119,43 @@
 
         </div>
     </header>
+
+    <!-- Hero -->
+     <section class="my-10">
+      <div class="w-[90%] py-6 mx-auto flex flex-col items-center justify-center text-center">
+
+        <!-- img -->
+         <img src="./assets/banner.png" alt="hero image">
+
+         <!-- headline -->
+         <div class=" w-[90%]">
+          <h1 class=" whitespace-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary my-5">A barn house of this design has a <br>striking appearance</h1>
+          <p class="text-allp text-base my-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+         </div>
+
+        <!-- button -->
+        <button class="myhover btn btn-md px-4 text-lg py-1 items-center rounded-2xl text-primary bg-btn2nd hover:text-white hover:bg-btn border-0 ">View Details
+        <div class="icon -rotate-45 ">
+            <i class="iconhover items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-2"></i>
+        </div>
+        </button>
+
+
+
+      </div>
+     </section>
+
+     <!-- Book Consult Modal -->
+     <dialog id="my_modal_3" class="modal bg-[#50bb748e]">
+      <div class="modal-box bg-btn text-head">
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <h3 class="text-xl font-bold">For Pre Booking. Please Choose Any Contact.</h3>
+        <p class="py-4 font-blod text-lg">Contact No: <a href="tel:+8801636748351" class="font-extrabold text-blue underline">+8801636748351</a></p>
+        <p class="py-4 font-blod text-lg">Email: <a href="mailto:abdullahall.nafiu@gmail.com" class="font-extrabold text-blue underline">Click To Send Mail</a></p>
+      </div>
+    </dialog>
 
 </body>
 </html>
