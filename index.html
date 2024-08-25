@@ -470,7 +470,6 @@
               background-position: center;
               background-size: cover;
               width: 100%;
-              height: ;
             "
           ></div>
           <!-- right hidden-->
@@ -756,7 +755,7 @@
 
     <!-- Contact Us -->
     <section
-      class="my-10 py-10"
+      class="py-10"
       style="
         background-image: url(./assets/bg.jpg);
         background-position: center;
@@ -851,6 +850,63 @@
         </form>
       </div>
     </section>
+
+    <!-- footer -->
+    <footer class="bg-[#1C1C1C] py-10">
+      <div
+        class="w-[90%] mx-auto flex flex-col gap-3 justify-center items-center py-6"
+      >
+        <!-- logo -->
+        <div class="flex gap-1 items-center text-3xl">
+          <div class="-rotate-45">
+            <i
+              class="h-[50px] w-[50px] items-center justify-center flex fa-solid fa-arrow-right bg-btn rounded-[50%] p-1"
+            ></i>
+          </div>
+
+          <h1 class="font-head font-extrabold text-white">Rinterio</h1>
+        </div>
+
+        <p class="text-allp text-base w-4/5 mx-auto text-center">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+
+        <!-- Menu option -->
+        <ul
+          class="flex flex-col items-center sm:flex-row whitespace-nowrap text-base font-normal gap-2 text-white"
+        >
+          <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-primary">
+            <a>Home</a>
+          </li>
+          <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-primary">
+            <a>Services</a>
+          </li>
+          <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-primary">
+            <a>Portfolio</a>
+          </li>
+          <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-primary">
+            <a>Blogs</a>
+          </li>
+          <li class="p-3 hover:bg-btn hover:rounded-xl hover:text-primary">
+            <a>Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Consult button -->
+        <button
+          class="myhover btn btn-md px-4 text-lg py-1 items-center rounded-2xl bg-btn hover:bg-btn2nd hover:text-white border-0"
+          onclick="my_modal_3.showModal()"
+        >
+          Book Consult
+          <div class="icon -rotate-45">
+            <i
+              class="iconhover bg-black text-white items-center justify-center flex fa-solid fa-arrow-right rounded-[50%] p-2"
+            ></i>
+          </div>
+        </button>
+      </div>
+    </footer>
 
     <!-- Book Consult Modal -->
     <dialog id="my_modal_3" class="modal bg-[#50bb748e]">
